@@ -36,7 +36,17 @@
   .wrap{max-width:1120px;margin:0 auto;padding:32px 20px 120px;}
 
   /* Header */
-  header.masthead{margin-bottom:28px;}
+  header.masthead{
+    margin-bottom:28px;display:flex;align-items:flex-start;
+    justify-content:space-between;gap:24px;
+  }
+  .brand{
+    font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:16px;
+    color:var(--pine);white-space:nowrap;flex:none;padding-top:2px;
+  }
+  @media (max-width:520px){
+    header.masthead{flex-direction:column-reverse;align-items:flex-start;gap:14px;}
+  }
   .eyebrow{
     font-size:12px;letter-spacing:.16em;text-transform:uppercase;
     color:var(--amber);font-weight:600;margin-bottom:10px;
@@ -154,9 +164,12 @@
 <body>
 <div class="wrap">
   <header class="masthead">
-    <div class="eyebrow">Critical illness coverage</div>
-    <h1>Premium Calculator</h1>
-    <p class="lede">Choose your details and coverage modules to see an estimated premium. Adjust anything and the figure updates instantly.</p>
+    <div>
+      <div class="eyebrow">Critical illness coverage</div>
+      <h1>Premium Calculator</h1>
+      <p class="lede">Choose your details and coverage modules to see an estimated premium. Adjust anything and the figure updates instantly.</p>
+    </div>
+    <div class="brand">Dream Team</div>
   </header>
 
   <div class="grid">
@@ -225,6 +238,7 @@
         <div class="amount"><span class="cur">RM</span><span class="num" id="bigNum">0.00</span></div>
         <div class="rnote" id="rNote">Switch on a module to begin.</div>
       </div>
+      <div class="foot">&copy; Dream Team</div>
     </div>
   </div>
 </div>
