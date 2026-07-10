@@ -36,18 +36,12 @@
   .wrap{max-width:1120px;margin:0 auto;padding:32px 20px 120px;}
 
   /* Header */
-  header.masthead{
-    margin-bottom:28px;display:flex;align-items:flex-start;
-    justify-content:space-between;gap:24px;
-  }
-  .brand{
+  .brandbar{
+    text-align:right;margin-bottom:18px;
     font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:16px;
-    color:var(--pine);white-space:nowrap;flex:none;margin-top:-24px;
+    color:var(--pine);
   }
-  @media (max-width:520px){
-    .brand{font-size:14px;margin-top:-22px;}
-    header.masthead{gap:14px;}
-  }
+  header.masthead{margin-bottom:28px;}
   .eyebrow{
     font-size:12px;letter-spacing:.16em;text-transform:uppercase;
     color:var(--amber);font-weight:600;margin-bottom:10px;
@@ -164,13 +158,12 @@
 </head>
 <body>
 <div class="wrap">
+  <div class="brandbar">Dream Team</div>
+
   <header class="masthead">
-    <div>
-      <div class="eyebrow">Critical illness coverage</div>
-      <h1>Premium Calculator</h1>
-      <p class="lede">Choose your details and coverage modules to see an estimated premium. Adjust anything and the figure updates instantly.</p>
-    </div>
-    <div class="brand">Dream Team</div>
+    <div class="eyebrow">Critical illness coverage</div>
+    <h1>Premium Calculator</h1>
+    <p class="lede">Choose your details and coverage modules to see an estimated premium. Adjust anything and the figure updates instantly.</p>
   </header>
 
   <div class="grid">
